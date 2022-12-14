@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ShyBoo from '../../Assets/BooShy-Cursor.png'
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -55,6 +56,7 @@ export const HeaderContent = styled.div`
     border-radius: 9999px;
     box-shadow: 0 2px 10px ${(props) => props.theme.colors.Primary};
     -webkit-tap-highlight-color: ${(props) => props.theme.colors.Background};
+    cursor: url(${ShyBoo}), pointer;
   }
   .SwitchRoot[data-state='checked'] {
     ${(props) => props.theme.colors.Primary};

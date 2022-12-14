@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import Boo from '../Assets/Boo-cursor.png';
 
 export const GlobalStyle = createGlobalStyle`
  *{
@@ -26,5 +27,7 @@ html{
 body{
 -webkit-font-smoothing: antialiased;
 background-color: ${(props) => props.theme.colors.Background};
+cursor: url(${Boo}), default;
+
 }
 `

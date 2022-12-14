@@ -10,15 +10,11 @@ export function Banner() {
     const { PageTheme } = useContext(PageContext)
   return (
     <BannerContainer>
-      <img
-        className="banner"
-        src={PageTheme === 'Light' ? LBanner : DBanner}
-        alt=""
-      />
+      <img className="banner" src={PageTheme === 'Light' ? LBanner : DBanner} alt="" />
       <img
         className="bannerLogo"
-        src={PageTheme === 'Light' ? LLogoBanner: DLogoBanner}
-        alt=""
+        src={PageTheme === 'Light' ? LLogoBanner : DLogoBanner}
+        alt={PageTheme === 'Light' ? 'Hotel Last Resort: You can check out any time you want' : 'Hotel Last Resort: But you can never leave'}
       />
     </BannerContainer>
   )

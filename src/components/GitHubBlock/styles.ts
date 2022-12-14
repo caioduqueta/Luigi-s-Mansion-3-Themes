@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ShyBoo from '../../Assets/BooShy-Cursor.png'
 
 export const GitHubBlockContainer = styled.div`
   display: flex;
@@ -22,7 +23,7 @@ export const GitHubBlockContainer = styled.div`
 
     gap: 1.25rem;
     padding: 1.5rem 3rem;
-    cursor: pointer;
+    cursor: url(${ShyBoo}), pointer;
     text-decoration: none;
     transition: all 0.2;
 
